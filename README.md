@@ -1,6 +1,6 @@
 # MNIST with TensorFlow Lite on Android
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nex3z/tflite-mnist-android/blob/master/model.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/balaprasanna/mnist-keras-tflite-android/blob/master/keras_mnist_v1_.ipynb)
 
 This project demonstrates how to use [TensorFlow Lite](https://www.tensorflow.org/lite) on Android for handwritten digits classification from MNIST.
 
@@ -8,7 +8,7 @@ This project demonstrates how to use [TensorFlow Lite](https://www.tensorflow.or
   <img src="image/demo.gif" heigit="500"/>
 </div>
 
-Prebuilt APK can be downloaded from [here](https://github.com/nex3z/tflite-mnist-android/releases/download/v1.0.0/tflite-mnist.apk).
+Prebuilt APK can be downloaded from [here](https://github.com/balaprasanna/mnist-keras-tflite-android/releases/download/v1.0.0/tflite-mnist.apk).
 
 
 ## How to build from scratch
@@ -21,7 +21,7 @@ Prebuilt APK can be downloaded from [here](https://github.com/nex3z/tflite-mnist
 
 ### Step 1. Train and convert the model to TensorFlow Lite FlatBuffer
 
-Run all the code cells in [model.ipynb](https://github.com/nex3z/tflite-mnist-android/blob/master/model.ipynb). 
+Run all the code cells in [model.ipynb](https://github.com/balaprasanna/mnist-keras-tflite-android/blob/master/keras_mnist_v1_.ipynb). 
 
 - If you are running Jupyter Notebook locally, a `mnist.tflite` file will be saved to the project directory.
 - If you are running the notebook in [Google Colab](https://colab.research.google.com/), a `mnist.tflite` file will be downloaded.
@@ -30,7 +30,7 @@ Run all the code cells in [model.ipynb](https://github.com/nex3z/tflite-mnist-an
 
 Copy the `mnist.tflite` generated in Step 1 to `/android/app/src/main/assets`, then build and run the app. A prebuilt APK can be downloaded from [here](https://github.com/nex3z/tflite-mnist-android/releases/download/v1.0.0/tflite-mnist.apk).
 
-The [Classifer](https://github.com/nex3z/tflite-mnist-android/blob/master/android/app/src/main/java/com/nex3z/tflitemnist/Classifier.java) reads the `mnist.tflite` from `assets` directory and loads it into an [Interpreter](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/java/src/main/java/org/tensorflow/lite/Interpreter.java) for inference. The Interpreter provides an interface between TensorFlow Lite model and Java code, which is included in the following library.
+The [Classifer](https://github.com/balaprasanna/mnist-keras-tflite-android/blob/master/android/app/src/main/java/com/nex3z/tflitemnist/Classifier.java) reads the `mnist.tflite` from `assets` directory and loads it into an [Interpreter](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/java/src/main/java/org/tensorflow/lite/Interpreter.java) for inference. The Interpreter provides an interface between TensorFlow Lite model and Java code, which is included in the following library.
 
 ```
 implementation 'org.tensorflow:tensorflow-lite:1.13.1'
