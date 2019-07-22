@@ -1,4 +1,4 @@
-package com.nex3z.tflitemnist;
+package com.bala.tflitemnist;
 
 import android.app.Activity;
 import android.content.res.AssetFileDescriptor;

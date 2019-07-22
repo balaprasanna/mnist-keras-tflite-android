@@ -1,4 +1,4 @@
-package com.nex3z.tflitemnist;
+package com.bala.tflitemnist;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.nex3z.fingerpaintview.FingerPaintView;
+import com.bala.tflitemnist.R;
 
 import java.io.IOException;
 
