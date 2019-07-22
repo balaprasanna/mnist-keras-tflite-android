@@ -21,7 +21,7 @@ Prebuilt APK can be downloaded from [here](https://github.com/balaprasanna/mnist
 
 ### Step 1. Train and convert the model to TensorFlow Lite FlatBuffer
 
-Run all the code cells in [model.ipynb](https://github.com/balaprasanna/mnist-keras-tflite-android/blob/master/keras_mnist_v1_.ipynb). 
+Run all the code cells in [keras_mnist_v1_.ipynb](https://github.com/balaprasanna/mnist-keras-tflite-android/blob/master/keras_mnist_v1_.ipynb). 
 
 - If you are running Jupyter Notebook locally, a `mnist.tflite` file will be saved to the project directory.
 - If you are running the notebook in [Google Colab](https://colab.research.google.com/), a `mnist.tflite` file will be downloaded.
